@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ncurses>
+#include <ncurses.h>
 #include <ctime>
 using namespace std;
 
@@ -14,5 +14,7 @@ int main() {
   mvprintw(5, 6, "main ff aja!");
   attroff(COLOR_PAIR(1));
   
+  getch();
+  endwin();
 return 0;
 }
